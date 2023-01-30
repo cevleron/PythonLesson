@@ -8,26 +8,70 @@
 # 385916 -> yes
 # 123456 -> no
 
+# a = int(input("Введите номер вашего билета что бы узнать счастливый он или нет: "))
+# Блок проверки на количество чисел
+# count = 0
+# while (a > 0):
+#     count += 1
+#     a = a // 10
+# print(count)
+# if count == 6:
+#     a1 = int(a/100000)
+#     print(a1)
+#     a2 = int((float(a/100000) - a1) * 10)
+#     print(a2)
+#     a3 = int((float(a/10000) - int(a/10000))*10)
+#     print(a3)
+#     a4 = int((float(a/1000) - int(a/1000))*10)
+#     print(a4)
+#     a5 = int((float(a/100) - int(a/100))*10)
+#     print(a5)
+#     a6 = int((float(a/10) - int(a/10))*10)
+#     print(a6)
+#     if (a1 + a2 + a3) == (a4 + a5 + a6):
+#         print('Счастливый')
+#     else:
+#         print('Обычный')
+# else:
+#     print("Ввели неверное число")
+
+# Блок вычислений
+# a1 = int(a/100000)
+# print(a1)
+# a2 = int((float(a/100000) - a1) * 10)
+# print(a2)
+# a3 = int((float(a/10000) - int(a/10000))*10)
+# print(a3)
+# a4 = int((float(a/1000) - int(a/1000))*10)
+# print(a4)
+# a5 = int((float(a/100) - int(a/100))*10)
+# print(a5)
+# a6 = int((float(a/10) - int(a/10))*10)
+# print(a6)
+# if (a1 + a2 + a3) == (a4 + a5 + a6):
+#     print('Счастливый')
+# else:
+#     print('Обычный')
+
 a = int(input("Введите номер вашего билета что бы узнать счастливый он или нет: "))
-count = 0
-while (a > 0):
-    count += 1
-    a = a // 10
-if count < 6 or count > 6:
+
+if len(str(a)) != 6:
     print("Ввели неверное число")
-a1 = int(a/100000)
-print(a1)
-a2 = int((float(a/100000) - a1) * 10)
-print(a2)
-a3 = int((float(a/10000) - int(a/10000))*10)
-print(a3)
-a4 = int((float(a/1000) - int(a/1000))*10)
-print(a4)
-a5 = int((float(a/100) - int(a/100))*10)
-print(a5)
-a6 = int((float(a/10) - int(a/10))*10)
-print(a6)
-if (a1 + a2 + a3) == (a4 + a5 + a6):
-    print('Счастливый')
 else:
-    print('Обычный')
+    a1 = int(a/100000)
+    print(a1)
+    a2 = int((float(a/100000) - a1) * 10)
+    print(a2)
+    a3 = int((float(a/10000) - int(a/10000))*10)
+    print(a3)
+    a4 = int((float(a/1000) - int(a/1000))*10)
+    print(a4)
+    a5 = int((float(a/100) - int(a/100))*10)
+    print(a5)
+    a6 = int((float(a/10) - int(a/10))*10+1)
+    print(a6)
+    if (a1 + a2 + a3) == (a4 + a5 + a6):
+        print('Счастливый')
+    else:
+        print('Обычный')
+    
