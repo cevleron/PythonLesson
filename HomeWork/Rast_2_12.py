@@ -6,3 +6,8 @@
 # 4 4 -> 2 2 
 # 5 6 -> 2 3
 
+
+import random
+x = random.randint(0,1000)
+y = random.randint(0,1000)
+print(x,y)
