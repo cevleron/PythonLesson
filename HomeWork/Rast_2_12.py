@@ -8,6 +8,5 @@
 
 
 import random
-x = random.randint(0,1000)
-y = random.randint(0,1000)
-print(x,y)
+a = int(input("Сумма чисел: "))
+b = int(input("Произведение чисел: "))
