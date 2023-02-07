@@ -76,6 +76,11 @@
 # }
 # -> 2
 
+# Второе решение через .value
+d = {1: 'Vlad', 2: 'Vlad', 3: 'Oleg', 4: 'Oleg', 5: 'Vlad'}
+list_1 = d.values ()
+print(len(set(list_1)))
+
 # my_dict = {
 #     1:'Vlad',
 #     2:'Vlad',
