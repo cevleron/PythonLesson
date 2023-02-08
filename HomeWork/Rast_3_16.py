@@ -7,3 +7,14 @@
 # 5
 # 1234 5
 # 3 -> 1
+
+n = int(input("Введите количество элементов в массиве: "))
+num_list = []
+
+for i in range (n):
+    num = int(input("Введите num "))
+    num_list.append(num)
+print(num_list)
+
+x = int(input("Введите число Х что бы узнать сколько раз оно встречается в массиве: "))
+print(f"Количество {num_list.count(x)}")
