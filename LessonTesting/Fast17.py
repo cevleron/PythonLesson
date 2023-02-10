@@ -76,10 +76,10 @@
 # }
 # -> 2
 
-# Второе решение через .value
-d = {1: 'Vlad', 2: 'Vlad', 3: 'Oleg', 4: 'Oleg', 5: 'Vlad'}
-list_1 = d.values ()
-print(len(set(list_1)))
+# # Второе решение через .value
+# d = {1: 'Vlad', 2: 'Vlad', 3: 'Oleg', 4: 'Oleg', 5: 'Vlad'}
+# list_1 = d.values ()
+# print(len(set(list_1)))
 
 # my_dict = {
 #     1:'Vlad',
@@ -90,6 +90,8 @@ print(len(set(list_1)))
 # for i in my_dict.values():
 #     my_set.add(i)
 # print(my_set)
+
+
 
 # Дан массив, состоящий из целых чисел.
 # Напишите программу, которая подсчитает количество элементов массива,
