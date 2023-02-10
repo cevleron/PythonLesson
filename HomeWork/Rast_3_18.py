@@ -15,9 +15,9 @@ print(num_list)
 x = int(input("Введите число Х что бы узнать сколько значений ближайших к нему встречается в массиве: "))
 min = abs(num_list[0]-x)
 max = abs(num_list[0]+x)
-for i in range(n):
-    if num_list(num)<min:
-        min = num_list[num]
+for i in range(len(num_list)):
+    if num_list(i)<min:
+        min = num_list[i]
     print (min)
 
 
