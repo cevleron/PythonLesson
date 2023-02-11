@@ -25,10 +25,14 @@ print(num_list_2)
 
 num_list3 = num_list_1+num_list_2
 
-print(num_list3)
+# print(num_list3)
+# for i in num_list3:
+#     if num_list3.count(i) > 1:
+#         print(i)
+
+checked_nums_list = []
 for i in num_list3:
-    if num_list3.count(i) > 1:
+    if num_list3.count(i) > 1 and i not in checked_nums_list:
+        checked_nums_list.append(i)
         print(i)
-
-
 
