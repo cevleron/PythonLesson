@@ -2,3 +2,12 @@
 # и возводит число А в целую степень B с помощью рекурсии.
 # A = 3; B = 5 -> 243 (35) 
 # A = 2; B = 3 -> 8
+import math
+a = int(input("Введите число А: "))
+b = int(input("Введите степень числа А: "))
+
+def expt(a, b):
+    if b==0:
+        return 1
+    return a*expt(a, b-1)
+print(expt(a,b))
