@@ -14,3 +14,18 @@
 # 1 2 3 4
 # 9
 
+num_of_bushes = int (input('Enter number of bushes:\n'))
+sett = [int (input('Enter the number of berries on bush:\n')) for i in range(num_of_bushes)]
+maxsum = 0
+for i in sett:
+    summ = sum(sett[i:i+3])
+    if summ > maxsum:
+        maxsum = summ
+if sett[0] + sett[-1] + sett[-2] > maxsum:
+  maxsum = sett[0] + sett[-1] + sett[-2]
+if sett[0] + sett[1] + sett[-1] > maxsum:
+  maxsum = sett[0] + sett[1] + sett[-1]
+print(maxsum)
+
+
+
