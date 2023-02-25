@@ -20,7 +20,6 @@ def find_contact(name):
                 print(line)
 # find_contact('Савин')
 
-
 def add_contact(new_contact):
     with open('LessonTesting/phone_number.txt', 'a') as data:
         data.write('\n' + new_contact)
@@ -42,3 +41,38 @@ while True:
     if numb == 4:
         break
     main_menu(numb)
+
+
+
+
+
+# print('1 - вывести все контакты /n') 
+# print('2 - поиск контакта \n') 
+# print('3 -добавить контакт \n')
+# print('4 - Выход \n')
+# file_path = 'phone_book.txt'
+# def tasks(task):
+#     if task == 4: print("до свидания")
+#     else:
+#         match task:
+#             case 1: # вывести все контакты
+#                 with open(file_path, 'r', encoding='utf8') as open_book:
+#                     for line in open_book:
+#                         print(line)
+#                     tasks(int(input("введите номер залачи от 1 до 4: ")))
+
+#             case 2: # поиск контактов
+#                 with open(file_path, 'r', encoding='utf8') as open_book:
+#                     seach_param = input("Введите параметр для поиска:")
+#                 for line in open_book: 
+#                     if seach_param in line:
+#                         print(line)
+#                     tasks(int(input("введите номер залачи от 1 до 4:")))
+            
+#             case 3: # добавить контакт
+#                 with open(file_path, 'a', encoding='utf8') as open_book:
+#                     add_n1 = input("Введите фамилию: ")
+            
+#             case 4:
+#                 with open(file_path, 'r', encoding='utf8') as open_book:
+#                     print()
