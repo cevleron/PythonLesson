@@ -27,6 +27,7 @@ def find_contact(name):
 #                     data.write('\n')
 #                     print(line)
 
+# С помощью зала))) Не совсем понял зачем строка 35 lines = infile.readline()??????
 def delet_contact():
     with open(INFILE, 'r', encoding="utf-8") as infile:
         names = input('Введите Имя или Фамилию для удаления: ')
@@ -48,9 +49,6 @@ def delet_contact():
 #                 print("Контакт удален")
 #             else:
 #                 print("Такого имени нет")
-
-
-
 
 # def delet_contact():
 #     with open(INFILE, 'r', encoding='utf-8') as infile, open(OUTFILE,'w', encoding='utf-8') as outfile:
